@@ -41,3 +41,22 @@ You should create one R script called run_analysis.R that does the following.
 * From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
 ## run_analysis.R script 
+
+### Required Libraries
+library(dplyr)
+library(data.table)
+
+### Loading the datasets
+
+` features <- read.table("UCI HAR Dataset/features.txt")
+activities <- read.table("UCI HAR Dataset/activity_labels.txt")
+
+# Read training data
+subjectTrain <- read.table("UCI HAR Dataset/train/subject_train.txt")
+activityTrain <- read.table("UCI HAR Dataset/train/y_train.txt")
+featuresTrain <- read.table("UCI HAR Dataset/train/X_train.txt")
+
+# Read test data
+subjectTest <- read.table("UCI HAR Dataset/test/subject_test.txt")
+activityTest <- read.table("UCI HAR Dataset/test/y_test.txt")
+featuresTest <- read.table("UCI HAR Dataset/test/X_test.txt") `
