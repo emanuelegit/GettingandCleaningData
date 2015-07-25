@@ -48,7 +48,8 @@ library(data.table)
 
 ### Loading the datasets
 
-``` features <- read.table("UCI HAR Dataset/features.txt")
+```R
+features <- read.table("UCI HAR Dataset/features.txt")
 activities <- read.table("UCI HAR Dataset/activity_labels.txt")
 
 # Read training data
