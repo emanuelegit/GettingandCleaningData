@@ -48,7 +48,7 @@ library(data.table)
 
 ### Loading the datasets
 
-` features <- read.table("UCI HAR Dataset/features.txt")
+``` features <- read.table("UCI HAR Dataset/features.txt")
 activities <- read.table("UCI HAR Dataset/activity_labels.txt")
 
 # Read training data
@@ -59,4 +59,4 @@ featuresTrain <- read.table("UCI HAR Dataset/train/X_train.txt")
 # Read test data
 subjectTest <- read.table("UCI HAR Dataset/test/subject_test.txt")
 activityTest <- read.table("UCI HAR Dataset/test/y_test.txt")
-featuresTest <- read.table("UCI HAR Dataset/test/X_test.txt") `
+featuresTest <- read.table("UCI HAR Dataset/test/X_test.txt") ```
